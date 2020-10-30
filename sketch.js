@@ -42,7 +42,7 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
  	World.add(world, ground);
 	
-	box1 = new Box(width/2,height-40,100,30);
+	box1 = new Box(width/2,height-40,100,15);
 
 
 	Engine.run(engine);
