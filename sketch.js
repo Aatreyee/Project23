@@ -17,7 +17,7 @@ function setup() {
 	createCanvas(800, 700);
 	rectMode(CENTER);
 	
-	box1 = new Box(width/2,height-40,100,30);
+	
 
 	packageSprite=createSprite(width/2, 80, 10,10);
 	packageSprite.addImage(packageIMG)
@@ -41,6 +41,8 @@ function setup() {
 	//Create a Ground
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
  	World.add(world, ground);
+	
+	box1 = new Box(width/2,height-40,100,30);
 
 
 	Engine.run(engine);
